@@ -1,6 +1,6 @@
 "use strict";
 
-//
+// pet data
 let petName = [
   "Name",
   "Matcha",
@@ -13,7 +13,8 @@ let petName = [
 ];
 let petSpecies = ["Species", "Dog", "Cat", "Cat", "Dog", "Dog", "Cat", "Cat"];
 let petGender = ["Gender", "Boy", "Girl", "Boy", "Girl", "Boy", "Boy", "Girl"];
-let petAge = ["Age", "3", "4", "4", "Unknown", "Unknown", "3", "3"];
+let petAge = ["Age", "3", "3", "4", "8", "3", "3", "3"];
+//picture links
 let petPicture = [
   "Picture",
   "https://build1snowman.neocities.org/web_development/images/Matcha.jpeg",
@@ -25,79 +26,90 @@ let petPicture = [
   "https://build1snowman.neocities.org/web_development/images/Pomelo.jpeg",
 ];
 
-// create the table
+//create the table
 let table = document.createElement("table");
 
-// table style
+//table style
 table.setAttribute("border", "1");
 $(table).addClass("table-style");
 
-// attach it to the html body
+//attach it to the html body
 document.body.appendChild(table);
 
-// variables
+//variables
 let numRows = 8; // 7 pets and 1 header row
 let row;
 let cell;
 let node;
 let img;
 
-// in a loop create the 5 rows:
+//in a loop create the 8 rows
 for (let i = 0; i < numRows; i++) {
+  //create row
   row = document.createElement("tr");
   table.appendChild(row);
 
-  // pet number
+  //*** */ pet number
   cell = document.createElement("td");
   cell.setAttribute("width", "30");
 
   if (i != 0) {
+    //if it's not the header row
     node = document.createTextNode(i);
   } else {
+    //if it's 0 (header row), give it empty string
     node = document.createTextNode("");
   }
 
   cell.appendChild(node);
   row.appendChild(cell);
 
-  //pet picture
+  //*** pet picture
   if (i != 0) {
+    //if it's not the header row
     cell = document.createElement("td");
     cell.setAttribute("width", "100");
+
+    //create img element
     img = document.createElement("img");
+
+    //set the img resource
     img.setAttribute("src", petPicture[i]);
     img.setAttribute("width", "100");
+
     cell.appendChild(img);
     row.appendChild(cell);
   } else {
+    //if it's 0 (header row), create the header "Picture"
     cell = document.createElement("td");
     node = document.createTextNode("Picture");
     cell.appendChild(node);
     row.appendChild(cell);
   }
 
-  //pet name
+  //*** pet name
   cell = document.createElement("td");
   cell.setAttribute("width", "70");
+
   node = document.createTextNode(petName[i]);
   cell.appendChild(node);
   row.appendChild(cell);
 
-  //pet species
+  //*** pet species
   cell = document.createElement("td");
   cell.setAttribute("width", "70");
   node = document.createTextNode(petSpecies[i]);
   cell.appendChild(node);
   row.appendChild(cell);
 
-  //pet gender
+  //*** pet gender
   cell = document.createElement("td");
   cell.setAttribute("width", "70");
   node = document.createTextNode(petGender[i]);
   cell.appendChild(node);
   row.appendChild(cell);
 
-  //pet age
+  //*** pet age
   cell = document.createElement("td");
   cell.setAttribute("width", "70");
   node = document.createTextNode(petAge[i]);
@@ -105,8 +117,10 @@ for (let i = 0; i < numRows; i++) {
   row.appendChild(cell);
 }
 
+//attach it to the div #pet
 $("#pet").append(table);
 
+//set the table color style
 $("#pet tr:even").css({
   "background-color": "#292929",
   color: "white",
