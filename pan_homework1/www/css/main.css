@@ -48,6 +48,11 @@
   margin-block-end: 0;
 }
 
+* td {
+  height: 50px;
+  text-align: center;
+}
+
 /* set parameters */
 .center {
   margin: 50px auto;
@@ -103,9 +108,13 @@
 }
 
 .block {
-  margin: 250px 50px;
+  margin: 150px 50px;
   justify-content: center;
   align-items: center;
+}
+
+#pet .block {
+  margin: 50px;
 }
 
 .word-highligh {
@@ -125,7 +134,8 @@
 }
 
 .img-finish,
-.img-like {
+.img-like,
+.img-care {
   width: 175px;
   height: 100%;
   margin-left: 50px;
@@ -160,4 +170,14 @@
 
 .long-sentence {
   max-width: 500px;
+}
+
+.table-style {
+  /* border-collapse: collapse; */
+  width: 900px;
+}
+
+#pet {
+  margin: 150px 50px;
+  padding: 0;
 }
