@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<head>
+  <title>Hi! I'm Anna!</title>
+  <link rel="stylesheet" href="www/css/main.css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body class=" flexbox fb-raw">
+  <!-- navigation -->
+  <aside class="nav-block flexbox fb-column">
+    <button class="tab-btn">Hello</button>
+    <button class="tab-btn">I'm from...</button>
+    <button class="tab-btn">The courses I've taken...</button>
+    <button class="tab-btn">My class goal...</button>
+    <button class="tab-btn">My career goal...</button>
+    <button class="tab-btn">My interests...</button>
+    <button class="tab-btn">The language I speak...</button>
+    <button class="tab-btn">Nice to meet you</button>
+  </aside>
+  <div class="content-block">
+    <!-- header -->
+    <div class="flexbox fb-raw fb-center block">
+  <img src="www/image/my-photo.jpeg" alt="Anna's photo" class="img-photo" />
+      <h1>Hello! I'm <scan class="word-highligh">Anna</scan>!</h1>
+    </div>
+
+    <!-- country -->
+    <div id="country" class="margin-bottom flexbox fb-row block">
+      <h2>I come from <scan class="word-highligh">Taiwan</scan>.</h2>
+      <img src="www/image/taiwan.png" alt="Taiwan" class="img-taiwan" />
+    </div>
+
+    <!-- courses -->
+    <div id="courses" class="margin-bottom flexbox fb-row">
+      <img
+        src="www/image/books-stack-of-three.png"
+        alt="courses"
+        class="img-books"
+      />
+      <div class="flexbox fb-column">
+          <h2 class="sentence">I've taken these <scan class="word-highligh">courses</scan>:</h2>
+
+          <div class="tab-block">
+          <ul class='tabs'>
+            <li><a href='#tab1'>Programming / Web</a></li>
+            <li><a href='#tab2'>User Experience</a></li>
+            <li><a href='#tab3'>Other</a></li>
+          </ul>
+        </div>
+
+        <!--  Tab for courses -->
+        <div class="tab-content">
+          <!-- programming / web courses -->
+          <div id='tab1' class="active">
+            <ul>
+              <li class="list-items">
+                <b>DGM 6108 - Programming Foundation for Digital Media</b></br>
+                <i class="description">I learned JavaScript (d3.js).</i>
+              </li>
+              <li class="list-items"><b>DGM 6501 - Web Creation Boot Camp</b></br>
+              <i class="description">I learned HTML, CSS.</i></li>
+              <li class="list-items"><b>DGM 6521 - Web Creation for CMS</b></br>
+              <i class="description">I learned WordPress.</i></li>
+              <li class="list-items">
+                <b>DGM 6983 - Intermediate Programming for Digital Media</b></br>
+                <i class="description">I learned C# and Blazor.</i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- user experiecne courses-->
+          <div id='tab2'>
+            <ul>
+              <li class="list-items">
+                <b>DGM 6168 - Usability and Human Interaction</b></br>
+              </li>
+              <li class="list-items"><b>ITC 6410 - Fundamentals of Human Behaviors for Interactive Systems</b></br></li>
+              <li class="list-items"><b>DGM 6268 - Usable Design for Mobile Digital Media</b></br></li>
+              <li class="list-items"><b>DGM 6525 - Research Methods for Global User Experiences</b></br></li>
+            </ul>
+          </div>
+
+          <!-- other courses -->
+          <div id='tab3'>
+            <ul>
+              <li class="list-items">
+                <b>DGM 6105 - Visual Communications Foundation</b></br>
+              </li>
+              <li class="list-items"><b>DGM 6145 - Information Technology and Creative Practice</b></br></li>
+              <li class="list-items">
+                <b>DGM 6122 - Foundations of Digital Storytelling</b></br>
+              </li>
+            </ul>
+          </div>
+
+      </div>
+      </div>
+      <script type='text/javascript' src='www/js/course_tab.js'></script>
+    </div>
+
+    <!-- class goal -->
+    <div id="class-goal" class="margin-bottom flexbox fb-row block">
+      <h2 class="long-sentence">I would like to learn how to build a website by using <scan class="word-highligh">framework</scan> like React.</h2>
+      <img src="www/image/finish.png" alt="flag" class="img-finish" />
+    </div>
+
+<!-- career -->
+<div id="career" class="margin-bottom flexbox fb-row block">
+  <img
+    src="www/image/man.png"
+    alt="courses"
+    class="img-man"
+  />
+    <h2 class="sentence">My career goal is to be a </br><scan class="word-highligh">UX designer / developer</scan>.</h2>
+</div>
+
+<!-- hobbies & interests -->
+<div id="hobbies" class="margin-bottom flexbox fb-row block">
+  <div class="flexbox fb-column">
+  <h2 class="long-sentence">My <scan class="word-highligh">interests</scan>:</h2>
+
+  <ul>
+    <li class="list-items">Pelates
+    </li>
+    <li class="list-items">Jogging
+    <li class="list-items">Dance
+  </ul>
+  </div>
+  <img src="www/image/like.png" alt="like" class="img-like" />
+</div>
+
+<!-- language -->
+<div id="language" class="margin-bottom flexbox fb-row block">
+  <img
+    src="www/image/language.png"
+    alt="language"
+    class="img-language"
+  />
+    <h2 class="long-sentence">I'm a native <scan class="word-highligh">Mandarin</scan> speaker and fluent in <scan class="word-highligh">English</scan>.</h2>
+</div>
+
+
+<!-- the pets I've taken care -->
+<div id="pet" >
+  <div class="margin-bottom flexbox fb-row block">
+    <h2 class="long-sentence">I usually take care of my friends' <scan class="word-highligh">pets</scan>!</h2>
+    <img src="www/image/animal-care.png" alt="like" class="img-care" />
+  </div>
+  <script type='text/javascript' src='www/js/homework2.js'></script>
+</div>
+
+<!-- appointment -->
+<div id="appointment" class="margin-bottom flexbox fb-row block">
+  <img
+    src="www/image/appointment.png"
+    alt="appointment"
+    class="img-appointment"
+  />
+
+  <div class="flexbox fb-column">
+    <h2 class="long-sentence"><scan class="word-highligh">Pet sitter</scan> request</h2>
+
+    <!-- Form for appointment -->
+    <div id="container" class="flexbox fb-column">
+      <form action="" method="post" id="request">
+        <p>
+          <label for="guestName">Your Name</label>
+          <input type="text" name="guestName" id="guestName" placeholder="e.g. Anna"  />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="e.g. XXX@gmail.com"/>
+        </p>
+        <p>
+          <label for="date">Select Date</label>
+          <input type="date" class="date" id="date" name="date" />
+        </p>
+        <p>
+          <label for="petName">The Pet's Name</label>
+          <input type="text" name="petName" id="petName" placeholder="e.g. Snoopy"/>
+        </p>
+        <p>
+          <label for="species">The Pet's Species</label>
+          <select name="species" id="species">
+            <option value="">- select -</option>
+            <option value="male">Dog</option>
+            <option value="female">Cat</option>
+            <option value="female">Fish</option>
+            <option value="female">Reptiles</option>
+            <option value="female">Birds</option>
+            <option value="female">Rabbits</option>
+          </select>
+        </p>
+        <p>
+          <label for="active">The Pet's Gender</label>
+          <input type="radio" name="active" title="Active"/>Boy
+          <input type="radio" name="active" title="InActive"/>Girl
+          <input type="radio" name="active" title="InActive"/>Unkown
+        </p>
+        <p>
+          <label for="note" style="vertical-align: top;">Let me know more about the pet!</label></br>
+          <textarea name="note" id="note" cols="50" rows="10" placeholder="e.g. Snoopy likes carrots."></textarea>
+        </p>
+        <p>
+          <button id="submit" type="submit">Submit your request</button>							
+        </p>
+      </form>
+      <script type='text/javascript' src='www/js/form.js'></script>
+    </div>
+  </div>
+</div>
+
+<!-- hello -->
+<div id="hello" class="margin-bottom flexbox fb-row block">
+  <h2 class="long-sentence">Nice to meet <scan class="word-highligh">you</scan>!</h2>
+  <img src="www/image/hello.png" alt="like" class="img-hello" />
+</div>
+
+</div>
+  
+</body>

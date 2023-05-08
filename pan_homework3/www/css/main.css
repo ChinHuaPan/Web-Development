@@ -34,11 +34,6 @@
   font-size: 18px;
 }
 
-* ul li::before {
-  content: "✓";
-  margin-right: 10px;
-}
-
 * h2 {
   margin: 10px 0;
 }
@@ -113,6 +108,12 @@
   align-items: center;
 }
 
+#courses {
+  margin: 150px 50px;
+  justify-content: center;
+  align-items: start;
+}
+
 #pet .block {
   margin: 50px;
 }
@@ -133,6 +134,10 @@
   margin-right: 50px;
 }
 
+.img-books {
+  margin-top: 100px;
+}
+
 .img-finish,
 .img-like,
 .img-care {
@@ -141,7 +146,8 @@
   margin-left: 50px;
 }
 
-.img-language {
+.img-language,
+.img-appointment {
   width: 175px;
   height: 100%;
   margin-right: 80px;
@@ -180,4 +186,83 @@
 #pet {
   margin: 150px 50px;
   padding: 0;
+}
+
+#tab1 ul li::before,
+#tab2 ul li::before,
+#tab3 ul li::before {
+  content: "✓";
+  margin-right: 10px;
+}
+
+.tab-block {
+  margin: 20px 0;
+}
+
+.tabs li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.tabs a {
+  padding: 10px;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.tabs a.active {
+  background-color: black;
+  color: white;
+}
+
+.tabs a:hover {
+  background-color: #4a4a4a;
+  color: white;
+  border: 2px solid #4a4a4a;
+}
+
+.tab-content {
+  width: 650px;
+}
+
+#container {
+  border: 2px solid #292929;
+  border-radius: 15px;
+  padding: 10px 50px;
+  margin-top: 10px;
+}
+
+#container p {
+  margin: 25px 0;
+}
+
+#note {
+  margin-top: 10px;
+}
+
+#submit {
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: medium;
+}
+
+#guestName,
+#email,
+#petName,
+#date,
+#species {
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  min-width: 160px;
+}
+
+#note {
+  border-radius: 5px;
 }
