@@ -1,0 +1,110 @@
+/* page */
+body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* tab */
+
+.tab-block {
+  margin: 20px 0;
+  padding-bottom: 20px0;
+  border-bottom: #e0e2db solid 1px;
+}
+
+.tabs li {
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+}
+
+.tabs a {
+  padding: 10px;
+  color: #5f7470;
+  text-decoration: none;
+}
+
+.tabs a.active {
+  /* background-color: #5f7470; */
+  /* color: white; */
+  color: #5f7470;
+  border-bottom: #5f7470 solid 5px;
+}
+
+.tabs a:hover {
+  border-bottom: #889696 solid 3px;
+  color: #5f7470;
+}
+
+/* Form */
+.question {
+  margin: 10px 0;
+}
+
+.btn {
+  width: 70px;
+  background-color: #5f7470;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.emojionearea {
+  border: 1px solid #d2d4c8 !important;
+}
+
+#question2 .emojionearea {
+  width: 80px !important;
+}
+
+#question5 .emojionearea {
+  width: 75% !important;
+}
+
+.input_summary,
+.input_location,
+.box,
+.input_tag {
+  height: 35px;
+  font-size: 16px;
+  border: 1px solid #d2d4c8;
+}
+
+.input_summary,
+.input_tag {
+  width: 50%;
+}
+
+.input_location {
+  width: 200px;
+}
+
+.textarea_note {
+  font-size: 16px;
+}
+
+/* table */
+table {
+  text-align: left;
+}
+
+th,
+td {
+  border-bottom: double;
+}
+
+.note-section {
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.emoji-section {
+  font-size: 30px;
+}
+
+.wrap {
+  white-space: pre-wrap;
+}

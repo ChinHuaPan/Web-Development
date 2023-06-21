@@ -1,0 +1,130 @@
+<!Doctype html>
+<html>
+
+    <head>
+    <title>Diary - Every day"s stories make who you are...</title>
+    <!-- import emoji libray -->
+    <link rel="stylesheet" href="www/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+    </head>
+
+    <body>
+    <!-- import JQuery and emoji libray -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <script type="text/javascript" src="www/js/course-tab.js"></script>
+    <script type="text/javascript" src="www/js/render.js"></script>
+
+    <!-- navigation -->
+    <div class="tab-block">
+        <ul class="tabs">
+          <li><a href="#tab1">Diary</a></li>
+          <li><a href="#tab2">Add</a></li>
+          <li><a href="#tab3">Stats</a></li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <div id="tab1" class="active">
+            <div id="diary-content"></div>
+        </div>
+
+        <div id="tab2">
+        <h1>Dear Diary...</h1>
+
+        <!--------- form ------------->
+        <form id="diary-form" name="formDiary" method="get" action="diary_note.php">
+        <!-- <form name="formDiary"> -->
+        
+        <!-- Q1: date-->
+        <div class="question">
+        Date</br><input type="date" name="date" class="box" required>
+        </div>
+
+        <!-- Q2: mood:emoji-->
+        <div class="question" id="question2">
+        How do you feel today? <input id="moodEmoji" type="text" name="emoji" >
+        </div>
+
+        <!-- Q3: mood:rating-->
+        <div class="question">
+        Mood Rating </br>
+            <input type="radio" name="rating" value="0">0
+            <input type="radio" name="rating" value="1">1
+            <input type="radio" name="rating" value="2">2  
+            <input type="radio" name="rating" value="3">3  
+            <input type="radio" name="rating" value="4">4  
+            <input type="radio" name="rating" value="5">5  
+            <input type="radio" name="rating" value="6">6  
+            <input type="radio" name="rating" value="7">7  
+            <input type="radio" name="rating" value="8">8  
+            <input type="radio" name="rating" value="9">9  
+            <input type="radio" name="rating" value="10">10  
+        </div>
+
+        <!-- Q4: summary-->
+        <div class="question">
+        A sentence for today </br>
+        <input type="text" name="summary" class="input_summary">
+        </div>
+
+        <!-- Q5: note-->
+        <div class="question" id="question5">
+        Today's Story</br>
+        <textarea id="note" type="text" name="note" class="textarea_note" rows="10" cols="70"></textarea>
+        </div>
+
+        <!-- Q6: location-->
+        <div class="question">
+        Location</br>
+        <input type="text" name="location" class="input_location">
+        </div>
+
+        <!-- Q7: tag-->
+        <div class="question">
+            Tag<small> (Please separate tags with commas.)</small></br>
+            <input type="text" name="tag" class="input_tag">
+            </div>
+            
+        <!-- submit btn -->
+        <input id="submit" type="submit" value="Add" class="btn"/>
+
+    </form>
+    </div>
+    <div id="tab3">
+        <div >good</div>
+    </div>
+</div>
+
+<!-- tab END -->
+<script>
+    // set the position of emoji picker modal
+    $("#moodEmoji").emojioneArea({pickerPosition: "left"});
+    $("#note").emojioneArea({pickerPosition: "top"});
+</script>
+
+<!-- <script src="www/js/diary.js"></script> -->
+
+</body>
+
+<!--
+    Reference:
+    > set default value for the date
+    https://stackoverflow.com/questions/14212527/how-to-set-default-value-to-the-inputtype-date
+    > emoji tutorial
+    https://www.youtube.com/watch?v=Xfv6kPfmero
+    > emoji library
+    https://cdnjs.com/libraries/emojionearea
+    > append data to JSON
+    https://stackoverflow.com/questions/7895335/append-data-to-a-json-file-with-php
+    > array_push
+    https://www.php.net/manual/en/function.array-push.php
+    > array_unshift
+    https://www.php.net/manual/en/function.array-unshift.php
+    > fix undefined errors with isset
+    https://www.simplilearn.com/tutorials/php-tutorial/undefined-index-in-php
+    > isset
+    https://www.php.net/manual/en/function.isset.php
+-->
+</html>
